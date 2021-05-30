@@ -1,0 +1,14 @@
+<!-- <i
+  class="bi"
+  [class.bi-star-fill]="isSelected"
+  [class.bi-star]="!isSelected"
+  style="font-size: 48px"
+  (click)="onClick()"
+></i> -->
+
+<i
+  class="bi"
+  [ngClass]="isSelected ? 'bi-star-fill' : 'bi-star'"
+  style="font-size: 48px"
+  (click)="onClick()"
+></i>
